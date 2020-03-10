@@ -2,14 +2,14 @@
 namespace jac;
 
 abstract class Veicolo {
-    protected $targa;
-    protected $modello;
-    protected $potenza;
-    protected $prezzo;
-    protected $nPorte;
-    protected $peso;
-    protected $cx;
-    protected $tipologia = [Tipologia::SUV,Tipologia::UTILITARIA,Tipologia::FUORISTRADA,Tipologia::BERLINA];
+    public $targa;
+    public $modello;
+    public $potenza;
+    public $prezzo;
+    public $nPorte;
+    public $peso;
+    public $cx;
+    public $tipologia = [Tipologia::SUV,Tipologia::UTILITARIA,Tipologia::FUORISTRADA,Tipologia::BERLINA];
 
     public function getTarga() {
         return $this->targa;

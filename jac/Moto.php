@@ -23,5 +23,8 @@ class Moto extends Veicolo implements CalcoloCO2 {
     public function stampa(){
         echo "\nMoto(modello): ".$this->modello." Prezzo: ".$this->prezzo." C02: ".$this->calcolaCO2();
     }
+    public function getTarga(){
+        echo parent::getTarga();
+    }
 }
 ?>

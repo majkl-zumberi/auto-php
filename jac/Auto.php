@@ -25,6 +25,9 @@ class Auto extends Veicolo implements CalcoloCO2{
             echo "\n";
         }
     }
+    public function getTarga(){
+        echo parent::getTarga();
+    }
     public function getModello(){
         echo "getting model..";
         echo "sas;".parent::getModello();
